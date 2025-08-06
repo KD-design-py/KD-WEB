@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDP's World</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Merriweather:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', 'Lato', 'Merriweather', Georgia, serif;
+            margin: 0;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            min-height: 100vh;
+        }
+
+        header h1 {
+            text-align: center;
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            margin: 0;
+            padding: 30px 0;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 2.5em;
+            animation: fadeHeader 2s ease-in;
+        }
+
+        @keyframes fadeHeader {
+            from { opacity: 0; transform: translateY(-30px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #222;
+            font-family: 'Roboto', 'Lato', Arial, sans-serif;
+            font-size: large;
+            margin: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #00c6ff;
+            color: #222;
+        }
+
+        main p {
+            text-align: center;
+            font-family: 'Lato', 'Roboto', Arial, sans-serif;
+            font-size: 1.2em;
+            padding: 20px;
+            color: #333;
+        }
+
+        main h2 {
+            font-family: 'Merriweather', Georgia, serif;
+            margin-top: 20px;
+            color: #0072ff;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .Most\ recent\ videos, .recent-beats {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+            padding: 24px 32px;
+            transition: box-shadow 0.3s;
+        }
+
+        .Most\ recent\ videos:hover, .recent-beats:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+
+        .videos, .beats {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        video, audio {
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            background: #f7faff;
+        }
+
+        .fade-in-video {
+            opacity: 0;
+            transition: opacity 1.3s ease-in;
+        }
+        .fade-in-video.visible {
+            opacity: 1;
+        }
+        .fade-in-slow {
+            transition: opacity 2.3s ease-in;
+        }
+
+        .emoji-loop {
+            width: 100vw;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 2.5em;
+            text-align: left;
+            margin: 10px 0 30px 0;
+            letter-spacing: 0.5em;
+            position: relative;
+        }
+
+        .emoji-loop span {
+            display: inline-block;
+            animation: emojiScroll 18s linear infinite;
+        }
+
+        @keyframes emojiScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100vw); }
+        }
+    </style>
+</head>
+<body>
+    <script src="New home.js"></script>
+    <header>
+        <h1>Welcome To My World</h1>
+    </header>
+    <div class="emoji-loop">
+        <span>🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UCr0oPCG4I13cLtGmjCqhOHg">Videos</a></li>
+            <li><a href="About Me.html">About me</a></li>
+            <li><a href="https://www.gofundme.com/f/help-kadmiel-create-his-studio">Donations</a></li>
+            <li><a href="#">Beats</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Here you will find all of my videos, lessons, and work on this website feel free to explore!</p>
+        <br>
+        <div>
+            <div class="Most recent videos" style="text-align: left;">
+                <h2>Most Recent Videos</h2>
+                <div class="videos">
+                 <video class="fade-in-video" width="320" height="240" controls>
+                    <source src="Screen recording 2025-02-20 6.08.10 PM.webm" type="video/mp4">
+                    Your browser does not support the video tag.
+                 </video>
+                 <video class="fade-in-video fade-in-slow" width="320" height="240" controls>
+                    <source src="11_15_14_ _ POWERFUL Praise And Worship With @harvestersolneyyouthandyou143 _ Part 2 _ HOLY PREMIER.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                 </video>
+                </div>
+            </div>
+            <div class="recent-beats" style="text-align: right;">
+                <h2>Most Recent Beats</h2>
+                <div class="beats">
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>            
+    </main>
+    
+</body>
+</html>
