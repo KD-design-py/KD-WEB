@@ -77,7 +77,7 @@
         }
 
         .Most\ recent\ videos, .recent-beats {
-            max-width: 600px;
+            max-width: 1200px; /* Increased from 600px */
             margin: 30px auto;
             background: #fff;
             border-radius: 16px;
@@ -90,7 +90,16 @@
             box-shadow: 0 8px 32px rgba(0,0,0,0.18);
         }
 
-        .videos, .beats {
+        .videos {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .beats {
             display: flex;
             justify-content: center;
             gap: 24px;
@@ -142,7 +151,7 @@
         <h1>Welcome To My World</h1>
     </header>
     <div class="emoji-loop">
-        <span>🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸</span>
+        <span>🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸 🥁 🎹 🎸</span>
     </div>
     <nav>
         <ul>
@@ -156,34 +165,42 @@
         <p>Here you will find all of my videos, lessons, and work on this website feel free to explore!</p>
         <br>
         <div>
-            <div class="Most recent videos" style="text-align: left;">
+            <div class="Most recent videos" style="text-align: center;">
                 <h2>Most Recent Videos</h2>
                 <div class="videos">
-                 <video class="fade-in-video" width="320" height="240" controls>
-                    <source src="Screen recording 2025-02-20 6.08.10 PM.webm" type="video/mp4">
-                    Your browser does not support the video tag.
-                 </video>
-                 <video class="fade-in-video fade-in-slow" width="320" height="240" controls>
-                    <source src="11_15_14_ _ POWERFUL Praise And Worship With @harvestersolneyyouthandyou143 _ Part 2 _ HOLY PREMIER.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                 </video>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/waupZnInGG4?si=h0gumLnznRXKbWLB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6RmXvJNLGTM?si=J8d5_PWNeocvdHDq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="recent-beats" style="text-align: right;">
-                <h2>Most Recent Beats</h2>
-                <div class="beats">
-                    <audio controls>
-                        <source src="audio.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <audio controls>
-                        <source src="audio.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
+                <h2 style="text-align: center;">Most Recent Beats</h2>
+                <div class="beats" style="justify-content: center;">
+                    <div style="display: flex; justify-content: space-between; gap: 24px; width: 100%;">
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 16px; align-items: flex-end;">
+                            <audio controls>
+                                <source src="{{ url_for('static', filename='audio/audio.mp3') }}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <audio controls>
+                                <source src="{{ url_for('static', filename='audio/audio.mp3') }}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+                            <audio controls>
+                                <source src="{{ url_for('static', filename='audio/audio.mp3') }}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <audio controls>
+                                <source src="{{ url_for('static', filename='audio/audio.mp3') }}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <p style="text-align: center;">You may purchase the audio tracks at <a href="https://www.beatstars.com/kadmiel">BeatStars</a></p>
                 </div>
             </div>
         </div>            
     </main>
-    
 </body>
 </html>
